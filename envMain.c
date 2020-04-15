@@ -27,11 +27,12 @@ int paths(char **args)
 	int finder = 0, found = 0;
 	char *newCommand = NULL, *paths = NULL, *temp = NULL, *token = NULL;
 
-	newCommand = malloc(sizeof(char *) * (_strlen(args[0]) + 1));
+	newCommand = malloc(_strlen(args[0]) + 2);
 	if (!newCommand)
 		return (0);
 
 	newCommand[0] = '/';
+	newCommand[1] = '\0';
 	_strcat(newCommand, args[0]);
 
 	finder = getPath();
