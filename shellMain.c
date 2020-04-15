@@ -21,7 +21,7 @@ char **tokenize(char *full)
 		final[i] = token;
 		i++;
 
-		token = strtok(NULL, " \n");
+		token = strtok(NULL, " \n\v\r\a\t");
 	}
 	final[i] = NULL;
 	return (final);
@@ -54,18 +54,21 @@ int main(int ac, char *av[])
 		{
 			if (isatty(STDIN_FILENO))
 				_putchar('\n');
-			return (1);
+			free(buffer);
+			return (0);
 		}
-		if (ac <= 2)
+		if (_strcmp(buffer, "\n") != 0)
 		{
-			args = tokenize(buffer);
-			status = biFinder(args);
-			free(args);
+			if (ac <= 2)
+			{
+				args = tokenize(buffer);
+				status = biFinder(args);
+				free(args);
+			}
+			else
+				status = biFinder(av);
 		}
-		else
-			status = biFinder(av);
-
 		free(buffer);
 	}
-	return (status);
+	return (0);
 }
