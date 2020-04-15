@@ -15,7 +15,7 @@ char **tokenize(char *full)
 	if (!final)
 		return (NULL);
 
-	token = strtok(full, " \n");
+	token = strtok(full, " \n\v\r\a\t");
 	while (token)
 	{
 		final[i] = token;
