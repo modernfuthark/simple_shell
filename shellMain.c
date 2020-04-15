@@ -47,8 +47,8 @@ int main(int ac, char *av[])
 			return (1);
 		if (isatty(STDIN_FILENO))
 		{
-			putchar('$');
-			putchar(' ');
+			_putchar('$');
+			_putchar(' ');
 		}
 		if (getline(&buffer, &bufsize, stdin) == -1)
 		{
