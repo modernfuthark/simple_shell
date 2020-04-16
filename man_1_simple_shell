@@ -8,6 +8,15 @@ int main(int ac, char*av[]);
 a basic shell that takes commands as input and gives you an output based on the commands
 .SH RETURN
 returns an output based off the command you use
+.SH EXAMPLE
+.B ./hsh
+
+.B $ls
+
+.B READMe.md main.c
+
+.B $
+
 .SH SEE ALSO
 man shell
 .SH BUGS
