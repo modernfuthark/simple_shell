@@ -1,0 +1,16 @@
+.TH simple_shell(3) "April 16 , 2020" "1" "simple_shell man page"
+.SH NAME
+.B simple_shell
+- produces an output based on a given format
+.SH SYNOPSIS
+int main(int ac, char*av[]);
+.SH DESCRIPTION
+a basic shell that takes commands as input and gives you an output based on the commands
+.SH RETURN
+returns an output based off the command you use
+.SH SEE ALSO
+man shell
+.SH BUGS
+we are infested with them
+.SH AUTHOR
+Tim Sninsky and Matt Feliciano
