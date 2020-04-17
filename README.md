@@ -3,8 +3,19 @@ Tim Sninksy, Matthew Feliciano\
 04/02/20
 ---
 
-# This project is about writing our own simple shell.
-
+# Description
+- The implementation of a simple shell. A shell is a user intferace for access to an operating system's services. Shells use either a command-line interface or graphical user interface, depending on a computer's role and particular operation.
+- You compile it with this command: 
+- (./hsh [arg...])
+## Example
+- ./hsh
+- $ ls
+- README.md main.c
+- $
+- __or__
+- $ echo "/bin/ls" | ./hsh
+- hsh main.c shell.c 'test_ls_2'
+- $
 ## This Shell is abled to use the built-ins:
 
 > `env`: Use this command to print environment variables.
