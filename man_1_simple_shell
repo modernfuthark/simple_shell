@@ -3,9 +3,9 @@
 .B simple_shell
 - produces an output based on a given format
 .SH SYNOPSIS
-- The implementation of a simple shell. A shell is a user intferace for access to an operating system's services. Shells use either a command-line interface or graphical user interface, depending on a computer's role and particular operation.
+- The implementation of a simple shell. A shell is a user interface for access to an operating system's services. Shells use either a command-line interface or graphical user interface, depending on a computer's role and particular operation.
 
-- You compile it with this command: (./hsh [arg...])
+You compile it with this command: gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 
 .SH DESCRIPTION
 a basic shell that takes commands as input and gives you an output based on the commands

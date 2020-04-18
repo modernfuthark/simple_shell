@@ -8,14 +8,14 @@ Tim Sninksy, Matthew Feliciano\
 - You compile it with this command: 
 - (./hsh [arg...])
 ## Example
-- ./hsh
-- $ ls
-- README.md main.c
-- $
+./hsh
+$ ls
+README.md main.c
+$
 - __or__
-- $ echo "/bin/ls" | ./hsh
-- hsh main.c shell.c 'test_ls_2'
-- $
+$ echo "/bin/ls" | ./hsh
+hsh main.c shell.c 'test_ls_2'
+$
 ## This Shell is abled to use the built-ins:
 
 > `env`: Use this command to print environment variables.
